@@ -18,7 +18,12 @@ a{
 a:hover{
   color: #FFF;
 }
-
+.flatiron{
+  display: inline-block;
+  right:2px;
+/*  position: absolute;
+  bottom:2%;*/
+}
 .button {
   display: inline-block;
   background-color: transparent;
