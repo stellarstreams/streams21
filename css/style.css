@@ -180,14 +180,14 @@ a:hover{
 }
 
 /* Center align the text within the three columns below the carousel */
-.info .col-lg-3 {
+.info .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .info h2 {
   font-weight: 400;
 }
-.info .col-lg-3 p {
+.info .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
@@ -228,7 +228,7 @@ a:hover{
   }
 }
 @media (max-width: 50em){
-  .col-lg-3 img{
+  .col-lg-4 img{
     width:35%;
   }
   .heading {
