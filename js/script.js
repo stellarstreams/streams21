@@ -59,6 +59,7 @@ var initParticleSlider = function(){
 var menu =  document.querySelector('#menu');
 var box =  document.querySelector('#main');
 var toplabel =  document.querySelector('#toplabel');
+var constraints =  document.querySelector('#constraints');
 var boxPosition = box.getBoundingClientRect().top;
 var btn = $(".button");
 var btnw=  document.querySelector('#buttonwrap a');
@@ -68,13 +69,14 @@ window.addEventListener('scroll', function() {
         menu.style.top = '0px';
         menu.style.backgroundColor='#222222';
         toplabel.style.top = '-200px';
+        constraints.style.top = '-600px';
         btn.addClass('show');
         btnw.href="#";
     } else {
         menu.style.top = 'calc(100% - 100px)';
         menu.style.bottom = '';
         menu.style.backgroundColor='transparent';
-        toplabel.style.top = '0px';
+        constraints.style.top = '0px';
         btn.removeClass('show');
         btnw.href="#idea";
     }
