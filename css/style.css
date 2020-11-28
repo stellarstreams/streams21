@@ -293,7 +293,7 @@ a:hover{
 -------------------------------------------------- */
 
 @media (min-width: 20em) {
-  /* Bump up size of carousel content */
+   /*Bump up size of carousel content */
   .heading {
     font-size: 50px;
   }
@@ -318,8 +318,8 @@ a:hover{
   }
 }
 
-@media (min-width: 62em) {
+/*@media (min-width: 699px) {*/
   .heading {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
-}
+/*}*/
