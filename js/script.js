@@ -38,11 +38,8 @@ var init = function(){
 
 
 var initParticleSlider = function(){
-  var psScript = document.createElement('script');
 
-  scaleDataURL(document.getElementById('first-slide').dataset.src).then(scaledSrc=>{
-    document.getElementById('first-slide').dataset.src = scaledSrc;
-  });
+  var psScript = document.createElement('script');
 
   (psScript.addEventListener
     ? psScript.addEventListener('load', init, false)
@@ -51,6 +48,18 @@ var initParticleSlider = function(){
     psScript.setAttribute('type', 'text/javascript');
   document.body.appendChild(psScript);
 }
+
+function resize_image(){
+scaleDataURL(document.getElementById('first-slide').dataset.src).then(scaledSrc=>{
+  document.getElementById('first-slide').dataset.src = scaledSrc;
+});
+}
+resize_image();
+
+function reload(){
+  resize_image(); initParticleSlider;
+}
+window.addEventListener('resize', reload);
 
 (window.addEventListener
   ? window.addEventListener('load', initParticleSlider, false)
@@ -69,7 +78,7 @@ window.addEventListener('scroll', function() {
         menu.style.top = '0px';
         menu.style.backgroundColor='#222222';
         toplabel.style.top = '-200px';
-        constraints.style.top = '-600px';
+        constraints.style.top = '-70%';
         btn.addClass('show');
         btnw.href="#";
     } else {
@@ -77,6 +86,7 @@ window.addEventListener('scroll', function() {
         menu.style.bottom = '';
         menu.style.backgroundColor='transparent';
         constraints.style.top = '0px';
+        toplabel.style.top = '0px';
         btn.removeClass('show');
         btnw.href="#idea";
     }
