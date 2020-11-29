@@ -41,6 +41,11 @@ a:hover{
 /*  position: absolute;
   bottom:2%;*/
 }
+
+.heading {
+  margin-top: 4rem;
+}
+
 .button {
   display: inline-block;
   background-color: transparent;
@@ -317,9 +322,9 @@ a:hover{
     font-size: 40px;
   }
 }
-
-/*@media (min-width: 699px) {*/
-  .heading {
-    margin-top: 4rem;
+@media (max-width: 767px){
+  .col-md-5 img{
+    width:50%;
   }
-/*}*/
+}
+
