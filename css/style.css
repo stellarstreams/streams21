@@ -240,6 +240,10 @@ a:hover{
   align-items: center;
 }
 
+.col p {
+  margin-bottom: 0.2em;
+}
+
 /* Featurettes
 ------------------------- */
 
@@ -265,6 +269,7 @@ a:hover{
   line-height: 1;
   letter-spacing: -.05rem;
   margin-bottom: 3rem;
+  font-size: 10pt;
 }
 
 .twitter-share-button{
@@ -279,8 +284,8 @@ a:hover{
   width:85%;
 }
 
-.col-lg-4 img{
-  width:60%;
+.round {
+  width:90%;
   border-radius: 50%;
 }
 
